@@ -1,55 +1,65 @@
 # 🌦️ Weather API Test Automation Framework
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Pytest-Framework-0E7FBF?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest">
-  <img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/Postman-Testing-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
-</p>
-
-A production-ready, professional backend automation framework built to thoroughly validate the **OpenWeatherMap REST API**. This project demonstrates industry-standard practices for API validation, edge-case handling, and continuous integration pipeline deployment.
+A professional API test automation framework built with **Python** and **Pytest**, testing the **OpenWeatherMap REST API**.
 
 ---
 
-## 🛠️ Tech Stack & Ecosystem
+## 🛠️ Tech Stack
 
-*   **Core Language:** Python 3.11
-*   **Testing Framework:** Pytest (Structured fixture management & test discovery)
-*   **HTTP Client:** Requests (Handles REST communication, payloads, and headers)
-*   **CI/CD Engine:** GitHub Actions (Automated test runner on code updates)
-*   **Exploratory Tool:** Postman (Initial manual endpoint mapping and debugging)
-
----
-
-## ✅ Test Suite & Coverage Matrix
-
-The framework covers critical functional paths, boundary thresholds, and failure-handling parameters across the endpoints.
-
-| Test Component | Executable Tests | Target Scope & Validation |
-| :--- | :---: | :--- |
-| `test_current_weather.py` | **5** | Validates status codes, payload structure, and current temperature bounds. |
-| `test_forecast.py` | **5** | Verifies 5-day sequential structural arrays, timeline data accuracy, and schema consistency. |
-| `test_negative_cases.py` | **7** | Handles invalid API keys, malformed coordinates, missing parameters, and rate-limiting responses. |
-| 📊 **Total Execution Metrics** | **17 Tests** | **Comprehensive Functional End-to-End Coverage** |
+| Tool | Purpose |
+|---|---|
+| Python 3.11 | Programming language |
+| Pytest | Test framework |
+| Requests | HTTP library |
+| GitHub Actions | CI/CD pipeline |
+| Postman | Manual API testing |
 
 ---
 
-## 📊 Target API Infrastructure
+## ✅ Test Coverage
 
-This framework tests live endpoints hosted by the [OpenWeatherMap Engine](https://openweathermap.org/api).
-
-*   **Base URL Context:** `https://api.openweathermap.org/data/2.5`
-*   **Monitored Endpoints:**
-    *   `GET /weather` — Fetches dynamic real-time meteorological data by geography.
-    *   `GET /forecast` — Extract 3-hour interval structural forecasts for a 5-day cycle.
+| Test File | Tests | Coverage |
+|---|---|---|
+| test_current_weather.py | 5 tests | Current weather endpoint |
+| test_forecast.py | 5 tests | 5-day forecast endpoint |
+| test_negative_cases.py | 7 tests | Negative & edge cases |
+| **Total** | **17 tests** | **Full API coverage** |
 
 ---
 
-## 🚀 Local Installation & Execution
+## 🚀 How To Run
 
-Follow these steps to pull down the repository, set up your isolated Python environment, and execute the backend test suites.
+**1. Clone the repository**
 
-### 1. Clone the Environment
-```bash
-git clone [https://github.com/Thahir747/weather-api-tests.git](https://github.com/Thahir747/weather-api-tests.git)
-cd weather-api-tests
+    git clone https://github.com/Thahir747/weather-api-tests.git
+
+**2. Install dependencies**
+
+    pip install -r requirements.txt
+
+**3. Run all tests**
+
+    pytest -v
+
+---
+
+## ⚙️ CI/CD Pipeline
+
+This project uses **GitHub Actions** to automatically run all 17 tests on every push.
+
+---
+
+## 📊 API Tested
+
+**OpenWeatherMap API** — https://openweathermap.org/api
+
+| Endpoint | Description |
+|---|---|
+| /weather | Current weather data |
+| /forecast | 5-day weather forecast |
+
+---
+
+## 👨‍💻 Author
+
+**Thahir** — QA Automation Engineer
