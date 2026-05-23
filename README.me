@@ -1,50 +1,74 @@
 # 🌦️ Weather API Test Automation Framework
 
-A professional API test automation framework built with Python and Pytest,
-testing the OpenWeatherMap REST API.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pytest](https://img.shields.io/badge/Pytest-Latest-green)
+![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-orange)
+
+A professional API test automation framework built with **Python** and **Pytest**, testing the **OpenWeatherMap REST API**.
+
+---
 
 ## 🛠️ Tech Stack
-- Python 3.11
-- Pytest
-- Requests Library
-- GitHub Actions (CI/CD)
-- Postman
 
-## 📁 Project Structure
-weather_api_tests/
-├── config.py               # API configuration & test data
-├── test_current_weather.py # Current weather endpoint tests
-├── test_forecast.py        # 5-day forecast endpoint tests
-├── test_negative_cases.py  # Negative & edge case tests
-├── requirements.txt        # Project dependencies
-└── .github/
-        └── workflows/
-                └── tests.yml # CI/CD pipeline
+| Tool | Purpose |
+|---|---|
+| Python 3.11 | Programming language |
+| Pytest | Test framework |
+| Requests | HTTP library |
+| GitHub Actions | CI/CD pipeline |
+| Postman | Manual API testing |
+
+---
 
 ## ✅ Test Coverage
-- Current Weather API (5 tests)
-- 5-Day Forecast API (5 tests)
-- Negative & Edge Cases (7 tests)
-- Total: 17 automated tests
+
+| Test File | Tests | Coverage |
+|---|---|---|
+| test_current_weather.py | 5 tests | Current weather endpoint |
+| test_forecast.py | 5 tests | 5-day forecast endpoint |
+| test_negative_cases.py | 7 tests | Negative & edge cases |
+| **Total** | **17 tests** | **Full API coverage** |
+
+---
 
 ## 🚀 How To Run
 
-### Install dependencies:
-pip install -r requirements.txt
+### 1️⃣ Clone the repository
+    git clone https://github.com/Thahir747/weather-api-tests.git
+    cd weather-api-tests
 
-### Run all tests:
-pytest -v
+### 2️⃣ Install dependencies
+    pip install -r requirements.txt
 
-### Run specific test file:
-pytest test_current_weather.py -v
-pytest test_forecast.py -v
-pytest test_negative_cases.py -v
+### 3️⃣ Add your API key in config.py
+    API_KEY = "your_api_key_here"
+
+### 4️⃣ Run all tests
+    pytest -v
+
+### 5️⃣ Run specific test file
+    pytest test_current_weather.py -v
+    pytest test_forecast.py -v
+    pytest test_negative_cases.py -v
+
+---
 
 ## ⚙️ CI/CD Pipeline
-This project uses GitHub Actions to automatically run all tests
-on every push to the repository.
+
+This project uses **GitHub Actions** to automatically run all 17 tests on every push to the repository.
+
+---
 
 ## 📊 API Tested
-OpenWeatherMap API (https://openweathermap.org/api)
-- Current Weather endpoint
-- 5-Day Forecast endpoint
+
+**OpenWeatherMap API** — https://openweathermap.org/api
+
+| Endpoint | Description |
+|---|---|
+| /weather | Current weather data |
+| /forecast | 5-day weather forecast |
+
+---
+
+## 👨‍💻 Author
+**Thahir** — QA Automation Engineer
