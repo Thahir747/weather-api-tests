@@ -24,6 +24,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pytest
 
+      - name: Check API key exists
+        env:
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        run: |
+          if [ -z "$OPENWEATHER_API_KEY" ]; then
+            echo "API KEY IS EMPTY!"
+          else
+            echo "API KEY IS SET!"
+          fi
+
       - name: Run Current Weather Tests
         env:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
