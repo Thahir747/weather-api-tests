@@ -1,10 +1,8 @@
-# 🌦️ Weather API Test Automation Framework
+# Weather API Test Automation Framework
 
-A professional API test automation framework built with **Python** and **Pytest**, testing the **OpenWeatherMap REST API**.
+A professional API test automation framework built with Python and Pytest, testing the OpenWeatherMap REST API.
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -14,52 +12,34 @@ A professional API test automation framework built with **Python** and **Pytest*
 | GitHub Actions | CI/CD pipeline |
 | Postman | Manual API testing |
 
----
-
-## ✅ Test Coverage
+## Test Coverage
 
 | Test File | Tests | Coverage |
 |---|---|---|
 | test_current_weather.py | 5 tests | Current weather endpoint |
 | test_forecast.py | 5 tests | 5-day forecast endpoint |
 | test_negative_cases.py | 7 tests | Negative & edge cases |
-| **Total** | **17 tests** | **Full API coverage** |
+| Total | 17 tests | Full API coverage |
 
----
+## How To Run
 
-## 🚀 How To Run
-
-**1. Clone the repository**
-
-    git clone https://github.com/Thahir747/weather-api-tests.git
-
-**2. Install dependencies**
+Install dependencies
 
     pip install -r requirements.txt
 
-**3. Run all tests**
+Run all tests
 
     pytest -v
 
----
+## CI/CD Pipeline
 
-## ⚙️ CI/CD Pipeline
+This project uses GitHub Actions to automatically run all 17 tests on every push.
 
-This project uses **GitHub Actions** to automatically run all 17 tests on every push.
+## API Tested
 
----
-
-## 📊 API Tested
-
-**OpenWeatherMap API** — https://openweathermap.org/api
+OpenWeatherMap API - https://openweathermap.org/api
 
 | Endpoint | Description |
 |---|---|
 | /weather | Current weather data |
-| /forecast | 5-day weather forecast |
-
----
-
-## 👨‍💻 Author
-
-**Thahir** — QA Automation Engineer
+| /forecast | 5-day weather forecast
